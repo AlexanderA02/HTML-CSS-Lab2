@@ -1,0 +1,30 @@
+Tips:
+- Skriv kommentarer som förklarar kod.
+- Commit:a ofta så att det är lätt att återgärda fel och gå tillbaka till
+tidigare versioner.
+- Använd Chromes Lighthouse funktion.
+
+Krav för G:
+- Enbart HTML & CSS behövs användas.
+- Webbplatesen ska vara responsiv och fungera bra på bredder mellan 360px och
+980px.
+- AAA eller AA standard på kontrasten mellan bakgrund och förgrund.
+- Navbar, innehåll och footer.
+- Minst en media query som gör att webbplatsen utnyttjar utrymme som finns på
+bredare skärmar.
+- Använd både Class och ID selectors:arna, de ska ha meningsfulla namn.
+- Använd FlexBox eller Grid minst en gång på ett meningsfullt sätt.
+- Använd MINST ett HTML5 element (för att t.ex. hjälpa användare med
+skrämläsare).
+- All kod måste vara validerad, bekräfta detta med en kommentar längst ner i
+varje koddokument.
+
+Krav för VG:
+- Semantisk HTML-kod, använd rätt element. Undvik <br>, utnyttja margin och
+padding istället. Semantisk kod bidrar till sökmotoroptimering (SEO).
+- Man ska skriva enhetligt formaterad kod, formateringen ska allstå vara
+konsekvent.
+- Använd åtminstone en väljare UTÖVER type selector, class selector och ID
+selector för att lösa ett problem där väljaren i fråga är lämplig.
+- Namnge klasser, ID:n och filer på beskrivande sätt.
+- Minst en responsiv bild.

@@ -1,0 +1,6 @@
+/* Gör alla element till den storlek de faktiskt är. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
