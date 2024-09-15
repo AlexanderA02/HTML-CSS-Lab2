@@ -4,3 +4,75 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Grid-layout för webbplatsens huvudelement. */
+body {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr*4;
+  grid-template-rows: 0.5fr 2fr 2fr 0.8fr;
+  grid-template-areas:
+  "header header header header"
+  "main main main main"
+  "main main main main"
+  "footer footer footer footer"
+  ;
+}
+
+header {
+  /* Grid relaterat */
+  grid-area: header;
+
+  /* Färg relaterat */
+  background-color: Black;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+
+  color: white;
+}
+
+#restaurang-logo {
+}
+
+#navigation {
+  font-size: 1.8rem;
+}
+
+#navigation a {
+  padding-left: 1em;
+  padding-right: 1em;
+
+  /* text-decoration: none; gör att <a> elementen inte har standrad
+  länk-styling, följande egenskaper ändra bas-stylingen. */
+  text-decoration: none;
+  /* Skaffa en fin font och uppdatera */
+  font-family: fantasy;
+  color: white;
+}
+
+#navigation a:hover {
+  color: yellow;
+}
+
+main {
+  /* Grid relaterat */
+  grid-area: main;
+
+  /* Färg relaterat */
+  background-color: lightcoral;
+}
+
+footer {
+  /* Grid relaterat */
+  grid-area: footer;
+
+  /* Färg relaterat */
+  background-color: lightgreen;
+}
