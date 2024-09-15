@@ -11,7 +11,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr*4;
-  grid-template-rows: 0.5fr 2fr 2fr 0.8fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 1fr;
   grid-template-areas:
   "header header header header"
   "main main main main"
@@ -36,9 +36,6 @@ header nav {
   height: 100%;
 
   color: white;
-}
-
-#restaurang-logo {
 }
 
 #navigation {
@@ -66,13 +63,30 @@ main {
   grid-area: main;
 
   /* Färg relaterat */
-  background-color: lightcoral;
+  background-color: white;
 }
 
 footer {
   /* Grid relaterat */
   grid-area: footer;
 
+  /* Flexbox relaterat */
+  display: flex;
+  justify-content: space-evenly;
+
   /* Färg relaterat */
-  background-color: lightgreen;
+  background-color: black;
+  color: white;
+}
+
+footer h2 {
+  border-bottom: solid 2px yellow;
+  margin-bottom: 0.5em;
+}
+
+footer ul {
+  /* Tar bort cirklarna innan varje list item. */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
