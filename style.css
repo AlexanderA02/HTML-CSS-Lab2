@@ -5,24 +5,13 @@
   box-sizing: border-box;
 }
 
-/* Grid-layout för webbplatsens huvudelement. */
 body {
-  height: 100vh;
-
-  display: grid;
-  grid-template-columns: 1fr*4;
-  grid-template-rows: 0.5fr 1.5fr 1.5fr 1fr;
-  grid-template-areas:
-  "header header header header"
-  "main main main main"
-  "main main main main"
-  "footer footer footer footer"
-  ;
+  background-color: aqua;
 }
 
 header {
-  /* Grid relaterat */
-  grid-area: header;
+  height: 10vh;
+  margin-bottom: 1em;
 
   /* Färg relaterat */
   background-color: Black;
@@ -59,16 +48,92 @@ header nav {
 }
 
 main {
-  /* Grid relaterat */
-  grid-area: main;
-
   /* Färg relaterat */
   background-color: white;
 }
 
+#meny {
+  height: 150vh;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "meny-rubrik meny-rubrik"
+  "förrätter förrätter"
+  "huvudrätter dryck"
+  "huvudrätter dessert"
+  ;
+  grid-gap: 1em;
+
+  text-align: center;
+
+  background-color: black;
+  color: white;
+}
+
+#meny-rubrik {
+  grid-area: meny-rubrik;
+}
+
+.menu-area {
+  text-align: start;
+  border-top: solid 0.2em white;
+}
+
+.menu-area h3 {
+  text-align: center;
+}
+
+.menu-area ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Tar bort cirklarna innan varje list item. */
+  list-style-type: none;
+}
+
+.menu-item {
+  padding: 1em;
+}
+
+#förrätter {
+  grid-area: förrätter;
+}
+
+#förrätter .menu-item {
+  width: 50%;
+}
+
+#huvudrätter {
+  grid-area: huvudrätter;
+}
+
+#dessert {
+  grid-area: dessert;
+}
+
+#dryck {
+  grid-area: dryck;
+}
+
+#drink-list {
+  display: flex;
+  flex-direction: column;
+}
+
+#dryck .menu-item .alcohol-level {
+  display: block;
+  list-style-type: disc;
+}
+
 footer {
-  /* Grid relaterat */
-  grid-area: footer;
+  margin-top: 1em;
 
   /* Flexbox relaterat */
   display: flex;
@@ -87,6 +152,4 @@ footer h2 {
 footer ul {
   /* Tar bort cirklarna innan varje list item. */
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
