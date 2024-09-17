@@ -12,6 +12,12 @@ body {
 header {
   height: 10vh;
 
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+
+  /* Skaffa en fin font och uppdatera */
+  font-family: fantasy;
+
   /* Färg relaterat */
   background-color: Black;
 }
@@ -26,10 +32,6 @@ header nav {
   color: white;
 }
 
-#navigation {
-  font-size: 1.8rem;
-}
-
 #navigation a {
   padding-left: 1em;
   padding-right: 1em;
@@ -37,13 +39,11 @@ header nav {
   /* text-decoration: none; gör att <a> elementen inte har standrad
   länk-styling, följande egenskaper ändra bas-stylingen. */
   text-decoration: none;
-  /* Skaffa en fin font och uppdatera */
-  font-family: fantasy;
   color: white;
 }
 
 #navigation a:hover {
-  color: yellow;
+  color: #FF8D00;
 }
 
 main {
@@ -51,7 +51,7 @@ main {
   overflow-y: auto;
 
   /* Färg relaterat */
-  background-color: white;
+  background-color: #CDAB6C;
 }
 
 #hero-section {
@@ -76,10 +76,11 @@ main {
 }
 
 #hero {
-
   font-family: fantasy;
   font-size: 7em;
+  letter-spacing: 0.05em;
   color: white;
+  text-align: center;
 }
 
 #meny {
@@ -109,15 +110,32 @@ main {
 
 #meny-rubrik {
   grid-area: meny-rubrik;
+
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  font-family: fantasy;
+  color: #FF8D00;
+
 }
 
 .menu-area {
   text-align: start;
+  font-family: sans-serif;
+
   border-top: solid 0.2em white;
 }
 
 .menu-area h3 {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  font-family: fantasy;
+  color: #FF8D00;
   text-align: center;
+}
+
+.menu-area h4 {
+  font-size: 1.1rem;
+  color: #FF8D00;
 }
 
 .menu-area ul {
@@ -152,6 +170,11 @@ main {
   grid-area: dryck;
 }
 
+#dryck h5 {
+  font-size: 1.1rem;
+  color: #FF8D00;
+}
+
 #drink-list {
   display: flex;
   flex-direction: column;
@@ -165,6 +188,8 @@ main {
 footer {
   width: 100%;
   margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
   /* Flexbox relaterat */
   display: flex;
@@ -173,11 +198,17 @@ footer {
   /* Färg relaterat */
   background-color: black;
   color: white;
+
+  font-family: sans-serif;
 }
 
 footer h2 {
-  border-bottom: solid 2px yellow;
+  border-bottom: solid 2px #FF8D00;
   margin-bottom: 0.5em;
+}
+
+footer h3 {
+  margin-top: 0.5em;
 }
 
 footer ul {
