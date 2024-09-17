@@ -5,26 +5,26 @@ tidigare versioner.
 - Använd Chromes Lighthouse funktion.
 
 Krav för G:
-- Enbart HTML & CSS behövs användas.
+- Enbart HTML & CSS behövs användas. CHECK
 - Webbplatesen ska vara responsiv och fungera bra på bredder mellan 360px och
 980px.
-- AAA eller AA standard på kontrasten mellan bakgrund och förgrund.
-- Navbar, innehåll och footer.
+- AAA eller AA standard på kontrasten mellan bakgrund och förgrund. Halv-check
+- Navbar, innehåll och footer. CHECK
 - Minst en media query som gör att webbplatsen utnyttjar utrymme som finns på
 bredare skärmar.
-- Använd både Class och ID selectors:arna, de ska ha meningsfulla namn.
-- Använd FlexBox eller Grid minst en gång på ett meningsfullt sätt.
+- Använd både Class och ID selectors:arna, de ska ha meningsfulla namn. CHECK
+- Använd FlexBox eller Grid minst en gång på ett meningsfullt sätt. CHECK
 - Använd MINST ett HTML5 element (för att t.ex. hjälpa användare med
-skrämläsare).
+skrämläsare). CHECK
 - All kod måste vara validerad, bekräfta detta med en kommentar längst ner i
 varje koddokument.
 
 Krav för VG:
 - Semantisk HTML-kod, använd rätt element. Undvik <br>, utnyttja margin och
-padding istället. Semantisk kod bidrar till sökmotoroptimering (SEO).
+padding istället. Semantisk kod bidrar till sökmotoroptimering (SEO). Halv-CHECK
 - Man ska skriva enhetligt formaterad kod, formateringen ska allstå vara
-konsekvent.
+konsekvent. Halv-CHECK
 - Använd åtminstone en väljare UTÖVER type selector, class selector och ID
 selector för att lösa ett problem där väljaren i fråga är lämplig.
-- Namnge klasser, ID:n och filer på beskrivande sätt.
+- Namnge klasser, ID:n och filer på beskrivande sätt. Halv-CHECK
 - Minst en responsiv bild.
