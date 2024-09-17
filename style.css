@@ -54,9 +54,32 @@ main {
   background-color: white;
 }
 
-main img {
+#hero-section {
+  position: relative;
   height: 80vh;
   width: 100%;
+}
+
+#hero-section img {
+  height: 100%;
+  width: 100%;
+}
+
+#hero-section div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+
+  font-family: fantasy;
+  font-size: 7em;
+  color: white;
 }
 
 #meny {
