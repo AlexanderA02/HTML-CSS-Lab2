@@ -3,16 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descprition" content="Smokin' Hot BBQ restaurangsida.">
   <title>Smokin' Hot BBQ</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<!--
-KOM IHÅG
-- Konsekvent formattering
-- Beskrivande namngivning
-- Semantiskt korrekt kod
--->
 <body>
   <!-- Ska innehålla en navbar och en bild med ett citat på. -->
   <header>
@@ -21,13 +16,12 @@ KOM IHÅG
         <h2>SMOKIN' HOT BBQ</h2>
       </section>
 
-      <!-- Ändra ID till lämligare namn -->
-      <section id="navigation">
+      <div id="navigation">
         <a href="">MENY</a>
         <a href="">BOKA BORD</a>
         <a href="">OM OSS</a>
         <a href="">KONTAKT</a>
-      </section>
+      </div>
     </nav>
   </header>
 
@@ -89,14 +83,14 @@ KOM IHÅG
       <section class="menu-area" id="dessert">
         <h3>Dessert</h3>
         <ul>
-          <l1 class="menu-item">
+          <li class="menu-item">
             <h4>Dessert 1</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate, at quidem fugiat excepturi quisquam magnam porro delectus hic quibusdam necessitatibus repellendus laboriosam culpa inventore, sit molestias sed? Tempora, deserunt.</p>
-          </l1>
-          <l1 class="menu-item">
+          </li>
+          <li class="menu-item">
             <h4>Dessert 2</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse numquam quaerat maxime beatae corrupti incidunt. Asperiores aut eos rerum porro veritatis quam, debitis quisquam suscipit, nemo voluptates obcaecati repudiandae non.</p>
-          </l1>
+          </li>
         </ul>
       </section>
 
@@ -104,7 +98,7 @@ KOM IHÅG
         <h3>Dryck</h3>
         <ul id="drink-list">
           <li class="menu-item">
-            <h5>Alkohol</h5>
+            <h4>Alkohol</h4>
             <ul class="alcohol-level">
               <li>Öl</li>
               <li>Cider</li>
@@ -112,7 +106,7 @@ KOM IHÅG
             </ul>
           </li>
           <li class="menu-item">
-            <h5>Alkoholfritt</h5>
+            <h4>Alkoholfritt</h4>
             <ul class="alcohol-level">
               <li>Läsk</li>
               <li>Juice</li>
@@ -124,11 +118,11 @@ KOM IHÅG
     </section>
     <!-- Ska innehålla information om öppetider, hur man hittar restaurangen och
     eventuellt annan relevant innehåll. -->
+    <!-- Footer ska egentligen inte vara i main. -->
     <footer>
         <section id="hitta-oss">
           <h2>HITTA OSS</h2>
           <p>Adress: Adressgatan 42</p>
-          <img src="#bild" alt="Karta till restaurangen">
         </section>
 
         <section id="öppetider">
@@ -148,6 +142,7 @@ KOM IHÅG
           <h2>KONTAKT</h2>
           <h3>Generella frågor</h3>
           <p>Mail: info@gmail.com</p>
+
           <h3>Angående bokning</h3>
           <p>Mail: bokning@gmail.com</p>
           <p>Telefonnummer: +46123456789</p>

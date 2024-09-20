@@ -82,8 +82,13 @@ main {
   color: white;
   text-align: center;
 
+  /* Ökar textens kontrast med bakgrundsbilden. Ser inte fantastisk ut men
+  funkar. */
+  backdrop-filter: blur(10px);
+
   margin-left: 0.5em;
   margin-right: 0.5em;
+  padding: 0.1em;
 }
 
 #meny {
@@ -219,7 +224,7 @@ footer ul {
   list-style-type: none;
 }
 
-/* Media query som anpassar webbsidan för mindre skärmar/telefonvy */
+/* Media queries som anpassar webbsidan för olika skärmstorlekar */
 @media (max-width: 980px) {
 
   #restaurang-namn {
